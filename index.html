@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>عبدالرحمن السيد — Front-End Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Style/style.css">
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="preloader">
+  <div class="loader-logo">&lt; AE /&gt;</div>
+  <div class="loader-bar"><span></span></div>
+</div>
+
+<!-- Noise -->
+<div class="noise"></div>
+
+<!-- Progress -->
+<div id="progress"></div>
+
+<!-- Navbar -->
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="#" class="logo">
+      <img class="logo-mark" src="pictures/Logo.jpg" alt="">
+      <span>عبدالرحمن</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about" class="nav-item">نبذة</a></li>
+      <li><a href="#education" class="nav-item">التعليم</a></li>
+      <li><a href="#skills" class="nav-item">المهارات</a></li>
+      <li><a href="#services" class="nav-item">الخدمات</a></li>
+      <li><a href="#experience" class="nav-item">الخبرات</a></li>
+      <li><a href="#projects" class="nav-item">أعمالي</a></li>
+      <li><a href="#certifications" class="nav-item">الشهادات</a></li>
+      <li><a href="#contact" class="nav-item">تواصل</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="language-toggle" id="languageToggle" aria-label="Switch to English" title="Switch to English">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <span class="language-code">EN</span>
+      </button>
+      <button class="theme-toggle" id="themeToggle" aria-label="تبديل الوضع">🌙</button>
+      <a href="#contact" class="nav-cta">وظّفني</a>
+      <button class="burger" id="burger" aria-label="القائمة">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about">نبذة عني</a>
+  <a href="#education">التعليم</a>
+  <a href="#skills">مهاراتي</a>
+  <a href="#services">الخدمات</a>
+  <a href="#experience">الخبرات</a>
+  <a href="#projects">أعمالي</a>
+  <a href="#certifications">الشهادات</a>
+  <a href="#contact">تواصل معي</a>
+</div>
+
+<!-- HERO -->
+<header class="hero" id="home">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="hero-badge reveal">
+        متاح للعمل الحر الآن
+      </div>
+      <h1 class="reveal reveal-delay-1">
+        أهلاً، أنا <span class="gradient-text">عبدالرحمن</span><br>
+        Front-End Developer
+      </h1>
+      <p class="lead reveal reveal-delay-2">
+        مطور واجهات أمامية شغوف بتحويل التصاميم إلى كود تفاعلي ومتجاوب.
+        أجمع بين الخبرة الرقمية واللغوية لتقديم تجارب مستخدم استثنائية بأكواد نظيفة ومنظمة.
+      </p>
+      <div class="hero-actions reveal reveal-delay-3">
+        <a href="#contact" class="btn btn-primary">
+          <span>
+            لنتحدث عن مشروعك
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </a>
+        <a href="#projects" class="btn btn-ghost">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg>
+          شاهد أعمالي
+        </a>
+        <a href="https://github.com/AbdelrahmanElsayedMohammed" target="_blank" rel="noopener" class="btn btn-ghost">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.04-.02-2.04-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.93.43.37.81 1.1.81 2.22 0 1.61-.01 2.9-.01 3.29 0 .32.21.7.83.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+      </div>
+      <div class="hero-stats reveal reveal-delay-4">
+        <div class="stat">
+          <h3>2+</h3>
+          <p>سنوات خبرة</p>
+        </div>
+        <div class="stat">
+          <h3>10+</h3>
+          <p>شهادات معتمدة</p>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="code-card">
+        <div class="code-header">
+          <span class="code-dot red"></span>
+          <span class="code-dot yellow"></span>
+          <span class="code-dot green"></span>
+        </div>
+        <div class="code-body">
+          <div><span class="c">// مطور واجهات أمامية</span></div>
+          <div><span class="k">const</span> <span class="v">developer</span> = {</div>
+          <div>&nbsp;&nbsp;name: <span class="s">'Abdelrahman Elsayed'</span>,</div>
+          <div>&nbsp;&nbsp;role: <span class="s">'Front-End Developer'</span>,</div>
+          <div>&nbsp;&nbsp;skills: [<span class="s">'HTML'</span>, <span class="s">'CSS'</span>, <span class="s">'JS'</span>],</div>
+          <div>&nbsp;&nbsp;<span class="f">passion</span>: <span class="s">'clean code'</span></div>
+          <div>};</div>
+          <br>
+          <div><span class="k">function</span> <span class="f">createAwesome</span>() {</div>
+          <div>&nbsp;&nbsp;<span class="k">return</span> <span class="p">✨ magic</span>;</div>
+          <div>}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Marquee -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React</span><span>Responsive Design</span><span>SEO</span><span>Git</span><span>Flexbox</span><span>Grid</span>
+    <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React</span><span>Responsive Design</span><span>SEO</span><span>Git</span><span>Flexbox</span><span>Grid</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">من أنا</div>
+      <h2>مطور <span class="grad">مبدع</span> برؤية مختلفة</h2>
+      <p>أجمع بين التقنية والإبداع اللغوي لصناعة تجارب رقمية لا تُنسى</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-visual reveal">
+        <img src="pictures/Abdelrahman.jpg" alt="عبدالرحمن السيد">
+      </div>
+      <div class="about-content reveal reveal-delay-1">
+        <h3>أهلاً بك في عالمي الرقمي 👋</h3>
+        <p>
+          أنا <strong>عبدالرحمن السيد</strong>، مطور واجهات أمامية من الإسكندرية، مصر.
+          أركز على إنشاء تجارب مستخدم سلسة باستخدام HTML5 و CSS3 و JavaScript و React، مع التزام كامل بجودة الأداء والاهتمام بأدق التفاصيل.
+        </p>
+        <p>
+          أعمل حالياً كمطور واجهات أمامية ضمن فريق من ثلاثة أشخاص على <strong>FlowLogix</strong>، نظام SaaS لإدارة الشحن والمخازن يخدم شركات اللوجستيات الصغيرة وتجار الجملة في مصر والسعودية.
+        </p>
+        <p>
+          ما يميزني هو الجمع بين <strong>الخبرة التقنية</strong> و<strong>الخلفية اللغوية القوية</strong> — مما يجعلني قادراً على فهم احتياجات العملاء وترجمتها إلى كود نظيف ومنظم، مع كتابة محتوى واضح لواجهات المستخدم.
+        </p>
+        <div class="about-tags">
+          <span class="tag">🎯 الاهتمام بالتفاصيل</span>
+          <span class="tag">🧩 حل المشكلات</span>
+          <span class="tag">⏱️ إدارة الوقت</span>
+          <span class="tag">💬 تواصل فعّال</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">الخلفية الأكاديمية</div>
+      <h2>التعليم</h2>
+    </div>
+    <div class="edu-card reveal">
+      <div class="icon">🎓</div>
+      <h3>طالب بكلية العلوم</h3>
+      <p>جامعة الإسكندرية — مصر</p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">ما أتقنه</div>
+      <h2>مهاراتي <span class="grad">الأساسية</span></h2>
+      <p>مجموعة متكاملة من المهارات التقنية والشخصية</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="icon-wrap">💻</div>
+        <h3>لغات وأدوات البرمجة</h3>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>Java</li>
+          <li>Python</li>
+          <li>React</li>
+        </ul>
+      </div>
+      <div class="skill-card reveal reveal-delay-1">
+        <div class="icon-wrap">🛠️</div>
+        <h3>أدوات التطوير</h3>
+        <ul>
+          <li>Visual Studio Code</li>
+          <li>Git & GitHub</li>
+          <li>DevTools المتصفح</li>
+          <li>REST APIs (استهلاك بيانات Backend)</li>
+        </ul>
+      </div>
+      <div class="skill-card reveal reveal-delay-2">
+        <div class="icon-wrap">⚙️</div>
+        <h3>التقنيات</h3>
+        <ul>
+          <li>التصميم المتجاوب (Responsive)</li>
+          <li>Flexbox & CSS Grid</li>
+          <li>DOM Manipulation</li>
+          <li>معالجة الأحداث (Events)</li>
+        </ul>
+      </div>
+      <div class="skill-card reveal reveal-delay-3">
+        <div class="icon-wrap">📈</div>
+        <h3>المهارات الرقمية</h3>
+        <ul>
+          <li>أساسيات SEO</li>
+          <li>كتابة محتوى لواجهات المستخدم</li>
+          <li>UX Writing</li>
+        </ul>
+      </div>
+      <div class="skill-card reveal reveal-delay-4">
+        <div class="icon-wrap">🤝</div>
+        <h3>المهارات الشخصية</h3>
+        <ul>
+          <li>الاهتمام الشديد بالتفاصيل</li>
+          <li>حل المشكلات بإبداع</li>
+          <li>إدارة الوقت بفعالية</li>
+          <li>التواصل الممتاز عن بُعد</li>
+        </ul>
+      </div>
+      <div class="skill-card reveal reveal-delay-4">
+        <div class="icon-wrap">✍️</div>
+        <h3>المحتوى والتدقيق</h3>
+        <ul>
+          <li>كتابة محتوى بالعربية والإنجليزية</li>
+          <li>التدقيق اللغوي والإملائي</li>
+          <li>تحسين المحتوى لمحركات البحث</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">ما أقدمه</div>
+      <h2><span class="grad">الخدمات الرقمية</span></h2>
+      <p>حلول واجهات أمامية عملية تناسب احتياجات مشروعك</p>
+    </div>
+    <div class="services-grid">
+      <div class="skill-card service-card reveal">
+        <div class="icon-wrap">🖥️</div>
+        <h3>تطوير مواقع متجاوبة</h3>
+        <p>إنشاء مواقع سريعة ومتوافقة مع الهواتف والأجهزة المختلفة باستخدام HTML وCSS وJavaScript.</p>
+      </div>
+      <div class="skill-card service-card reveal reveal-delay-1">
+        <div class="icon-wrap">✨</div>
+        <h3>تحسين تجربة المستخدم</h3>
+        <p>تحسين سهولة الاستخدام، وضوح المحتوى، وتناسق الواجهة على مختلف أحجام الشاشات.</p>
+      </div>
+      <div class="skill-card service-card reveal reveal-delay-2">
+        <div class="icon-wrap">✍️</div>
+        <h3>المحتوى وتهيئة SEO</h3>
+        <p>كتابة وتدقيق محتوى عربي وإنجليزي لواجهات المستخدم، مع تطبيق أساسيات SEO.</p>
+      </div>
+      <div class="skill-card service-card reveal reveal-delay-3">
+        <div class="icon-wrap">⚛️</div>
+        <h3>واجهات React</h3>
+        <p>بناء واجهات تفاعلية منظمة وقابلة للتطوير، وربطها بواجهات REST APIs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">مسيرتي</div>
+      <h2>الخبرات <span class="grad">العملية</span></h2>
+      <p>رحلتي في عالم التطوير والمحتوى الرقمي</p>
+    </div>
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-head">
+            <h3>مطور واجهات أمامية — FlowLogix</h3>
+            <span class="tl-date">حالياً</span>
+          </div>
+          <p class="experience-team-size">فريق من 3 أشخاص</p>
+          <ul>
+            <li>بناء واجهة نظام SaaS لإدارة الشحن والمخازن باستخدام React.</li>
+            <li>ربط الواجهة الأمامية بـ Backend مبني على Spring Boot و PostgreSQL عبر REST APIs.</li>
+            <li>تصميم شاشات عملية (Dashboards) لعملاء من شركات اللوجستيات وتجار الجملة في مصر والسعودية.</li>
+            <li>التعاون المباشر مع فريق صغير على قرارات المنتج وتجربة المستخدم.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="experience-extra-heading">خبرات إضافية</p>
+    <div class="experience-extra-card">
+      <p>
+        <strong>كتابة محتوى وتدقيق لغوي (2023 — الآن)</strong> — مقالات ومحتوى مواقع بالعربية والإنجليزية، مع تطبيق أساسيات SEO.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">معرض أعمالي</div>
+      <h2>مشاريع <span class="grad">مختارة</span></h2>
+      <p>نماذج تعكس مهاراتي في تطوير الواجهات الأمامية</p>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <span class="project-badge">مشروع حالي — فريق</span>
+        <div class="project-preview">
+          <img src="pictures/FlowLogix.png" alt="واجهة مشروع FlowLogix لإدارة الشحن والمخازن">
+        </div>
+        <div class="project-info">
+          <h3>FlowLogix — نظام إدارة شحن ومخازن</h3>
+          <p>واجهة أمامية لمنصة SaaS تساعد شركات اللوجستيات الصغيرة وتجار الجملة على إدارة الشحنات والمخزون، مبنية بـ React ومتصلة بـ Backend عبر Spring Boot و PostgreSQL.</p>
+          <div class="project-tags">
+            <span>React</span><span>REST API</span><span>Spring Boot</span><span>PostgreSQL</span>
+          </div>
+          <a href="https://flow-logix-abdelrahman-4ddb.vercel.app/" target="_blank" rel="noopener" class="btn btn-ghost project-link">زيارة المشروع</a>
+        </div>
+      </div>
+      <div class="project-card reveal reveal-delay-1">
+        <span class="project-badge">مشروع فردي</span>
+        <div class="project-preview">
+          <img src="pictures/El-Kottab.jpg" alt="واجهة تطبيق الكُتَّاب لقراءة وتسميع القرآن">
+        </div>
+        <div class="project-info">
+          <h3>الكُتَّاب — تطبيق قراءة وتسميع القرآن</h3>
+          <p>موقع لقراءة القرآن الكريم وتسميعه بصوت الشيخ الحصري، مع إمكانية إضافة السور لقائمتي القراءة والتسميع ومشغل صوت مدمج. صممته ونفذته بالكامل بمفردي.</p>
+          <div class="project-tags">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+          </div>
+          <a href="https://abdelrahmanelsayedmohammed.github.io/El-Kottab/" target="_blank" rel="noopener" class="btn btn-ghost project-link">زيارة المشروع</a>
+        </div>
+      </div>
+      <div class="project-card reveal reveal-delay-2">
+        <span class="project-badge">مشروع فردي</span>
+        <div class="project-preview">
+          <img src="pictures/StyleHub.png" alt="واجهة تطبيق StyleHub متجر إلكتروني للأزياء">
+        </div>
+        <div class="project-info">
+          <h3>StyleHub — متجر إلكتروني للأزياء</h3>
+          <p>متجر ملابس متعدد الصفحات يضم مجموعات الهودي والسويت بانت، وكتالوجًا مع اختيار المقاسات. يتضمن سلة تفاعلية تحفظ المنتجات محليًا، وتتيح تعديل الكميات وحساب الإجمالي، بالإضافة إلى صفحة لإتمام الطلب.</p>
+          <div class="project-tags">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>LocalStorage</span>
+          </div>
+          <a href="https://abdelrahmanelsayedmohammed.github.io/Shopping_Web/" target="_blank" rel="noopener" class="btn btn-ghost project-link">زيارة المشروع</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">التطوير المستمر</div>
+      <h2>الدورات <span class="grad">والشهادات</span></h2>
+      <p>رحلتي في التعلم المستمر وتطوير المهارات</p>
+    </div>
+    <div class="cert-grid">
+      <a href="https://www.credly.com/badges/c36f07b0-9d79-4d60-ab4c-9d0b4b329762/public_url" target="_blank" rel="noopener" class="cert-card linked-cert reveal"><span class="cert-num">01</span><div class="cert-details"><p>أساسيات البيانات — IBM SkillsBuild</p><span class="cert-link-hint">اضغط لعرض الشهادة ↗</span></div></a>
+      <a href="https://drive.google.com/file/d/1pIloFVrK1XlIxwk-rgdShwmGTKZrTzJi/view?usp=drivesdk" target="_blank" rel="noopener" class="cert-card linked-cert reveal"><span class="cert-num">02</span><div class="cert-details"><p>دبلومة برمجة (Java & Python) — American Board</p><span class="cert-link-hint">اضغط لعرض الشهادة ↗</span></div></a>
+      <div class="cert-card reveal"><span class="cert-num">03</span><p>دورات متقدمة في JavaScript و CSS (يوتيوب)</p></div>
+      <div class="cert-card reveal"><span class="cert-num">04</span><p>مقدمة في الذكاء الاصطناعي — Coursera</p></div>
+      <div class="cert-card reveal"><span class="cert-num">05</span><p>أساسيات التسويق الرقمي — Google Digital Garage</p></div>
+    </div>
+    <p class="certification-note">
+      + شهادات ودبلومات إضافية (بيت العلوم المصري، Udemy) متاحة عند الطلب
+    </p>
+  </div>
+</section>
+
+<!-- LANGUAGES -->
+<section id="languages">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">مهاراتي اللغوية</div>
+      <h2>اللغات</h2>
+    </div>
+    <div class="lang-grid">
+      <div class="lang-card reveal">
+        <h3>العربية</h3>
+        <p>اللغة الأم</p>
+        <div class="lang-bar"><span data-width="100%"></span></div>
+      </div>
+      <div class="lang-card reveal reveal-delay-1">
+        <h3>الإنجليزية</h3>
+        <p>متقدم (B2)</p>
+        <div class="lang-bar"><span data-width="75%"></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-wrap reveal">
+      <img class="contact-logo" src="pictures/Logo.jpg" alt="شعار عبدالرحمن السيد">
+      <h2>هل لديك مشروع؟ لنتحدث! 🚀</h2>
+      <p>أنا متاح للعمل الحر ومستعد لتحويل أفكارك إلى واقع رقمي بأعلى جودة.</p>
+      <div class="contact-links">
+        <a href="mailto:abdelrahmanemohammed978@gmail.com" class="contact-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          البريد الإلكتروني
+        </a>
+        <a href="tel:+201202864087" class="contact-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +20 120 286 4087
+        </a>
+        <a href="https://github.com/AbdelrahmanElsayedMohammed" target="_blank" rel="noopener" class="contact-link">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.04-.02-2.04-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.93.43.37.81 1.1.81 2.22 0 1.61-.01 2.9-.01 3.29 0 .32.21.7.83.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          موقعي وأعمالي على GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>صُنع بواسطة Abdelrahman © 2026</p>
+</footer>
+
+<!-- Back to top -->
+<button id="back-top" aria-label="العودة للأعلى">↑</button>
+
+<script src="Script/script.js"></script>
+</body>
+</html>
